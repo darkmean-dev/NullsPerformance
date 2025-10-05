@@ -1,4 +1,5 @@
 {
+    "@version": "0.0.1beta_v63",
     "@title": "NullsPerformance",
     "@description": {
         "RU": "Мод-библиотека, позволяющая настроить вашу игру <b>так, как вам захочется.</b> <br>\nПодробнее: <a href=https://github.com/darkmean-dev/NullsPerformance>GitHub</a>\n",
@@ -48,23 +49,6 @@
                 "TR": "Müziği boş bir dosya ile değiştirir. Bir miktar bellek (RAM) tasarrufu sağlayabilir."
             },
             "@patches": "json/NullsPerformance/hardDisableMusic.json",
-            "@enabled": false,
-            "@conflicts": []
-        },
-        "disableSkins": {
-            "@name": {
-                "RU": "Отключить все нестандартные скины для персонажей",
-                "EN": "Disable All Non-Standard Character Skins",
-                "ZH": "禁用所有非标准角色皮肤",
-                "TR": "Tüm Standart Dışı Karakter Görünümlerini Devre Dışı Bırak"
-            },
-            "@description": {
-                "RU": "<b><i>Примечание: эта функция может быть модифицирована другими модами (часть библиотеки)</b></i>.",
-                "EN": "<b><i>Note: This feature may be modified by other mods (part of the library)</b></i>.",
-                "ZH": "<b><i>注意: 此功能可能被其他模组修改 (属于库的一部分)</b></i>.",
-                "TR": "<b><i>Not: Bu özellik diğer modlar tarafından değiştirilebilir (kütüphanenin bir parçasıdır)</b></i>."
-            },
-            "@patches": "json/NullsPerformance/disableSkins.json",
             "@enabled": false,
             "@conflicts": []
         }

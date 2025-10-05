@@ -1,89 +1,56 @@
-# NullsPerformance 0.0.1beta_v63
-# Модификация-библиотека для Null's Brawl, которая способна настроить игру так, как вам захочется!
-#
-# ВНИМАНИЕ! Для работы мода необходимо заранее конвертировать .yaml в .json.
-#
-# UUID: 00000000−0000−4000−8000−000000000000
-# Внимание! При создании форка этого мода, пожалуйста, придумайте свой UUID. Спасибо :3.
-# Автор: darkmean. Подробнее в README.md
-
-"@version": "0.0.1beta_v63"
-"@title": NullsPerformance
-
-"@description":
-  RU: |
-    Мод-библиотека, позволяющая настроить вашу игру <b>так, как вам захочется.</b> <br>
-    Подробнее: <a href=https://github.com/darkmean-dev/NullsPerformance>GitHub</a>
-  EN: |
-    A mod library that lets you customize your game <b>exactly the way you want it.</b> <br>
-    Details: <a href=https://github.com/darkmean-dev/NullsPerformance>GitHub</a>
-  ZH: |
-    一个 Mod 库，允许您<b>随心所欲地定制</b>您的游戏。<br>
-    详情: <a href=https://github.com/darkmean-dev/NullsPerformance>GitHub</a>
-  TR: |
-    Oyununuzu <b>tamamen istediğiniz gibi</b> özelleştirmenize olanak tanıyan bir mod kütüphanesi.<br>
-    Detaylar: <a href=https://github.com/darkmean-dev/NullsPerformance>GitHub</a>
-
-"@author": <a href='https://t.me/s_darkmean>darkmean</a> | <a href=https://github.com/darkmean-dev/NullsPerformance>GitHub</a>
-
-# -------------------
-"@features": 
-  # Принудительно включить режим экономии памяти
-  enableLowMode:
-    "@name": 
-      RU: Принудительно включить режим экономии памяти
-      EN: Force enable memory saving mode
-      ZH: 强制开启省内存模式
-      TR: Bellek tasarrufu modunu zorla etkinleştir
-
-    "@patches": "json/NullsPerformance/enableLowMode.json"
-    "@enabled": false
-    "@conflicts": [enableHighMode]
-
-  # Принудительно включить режим производительности
-  enableHighMode:
-    "@name": 
-      RU: Принудительно включить режим производительности
-      EN: Force enable performance mode
-      ZH: 强制开启高性能模式
-      TR: Performans modunu zorla etkinleştir
-
-    "@patches": "json/NullsPerformance/enableHighMode.json"
-    "@enabled": false
-    "@conflicts": [enableLowMode]
-  
-  # Принудительно отключить музыку в игре
-  hardDisableMusic:
-    "@name": 
-      RU: Принудительно отключить музыку в игре
-      EN: Force Disable In-Game Music
-      ZH: 强制禁用游戏音乐
-      TR: Oyun İçi Müziği Zorla Devre Dışı Bırak
-
-    "@description":
-      RU: Заменяет музыку пустым файлом. Может сэкономить немного памяти.
-      EN: Replaces music with an empty file. May save a small amount of memory.
-      ZH: 用空文件替换游戏音乐。可以节省少量内存。
-      TR: Müziği boş bir dosya ile değiştirir. Bir miktar bellek (RAM) tasarrufu sağlayabilir.
-
-    "@patches": "json/NullsPerformance/hardDisableMusic.json"
-    "@enabled": false
-    "@conflicts": []
-  
-  # # Отключить все нестандартные скины для персонажей
-  # disableSkins:
-  #   "@name":
-  #     RU: Отключить все нестандартные скины для персонажей
-  #     EN: Disable All Non-Standard Character Skins
-  #     ZH: 禁用所有非标准角色皮肤
-  #     TR: Tüm Standart Dışı Karakter Görünümlerini Devre Dışı Bırak
-
-  #   "@description":
-  #     RU: "<b><i>Примечание: эта функция может быть модифицирована другими модами (часть библиотеки)</b></i>."
-  #     EN: "<b><i>Note: This feature may be modified by other mods (part of the library)</b></i>."
-  #     ZH: "<b><i>注意: 此功能可能被其他模组修改 (属于库的一部分)</b></i>."
-  #     TR: "<b><i>Not: Bu özellik diğer modlar tarafından değiştirilebilir (kütüphanenin bir parçasıdır)</b></i>."
-
-  #   "@patches": "json/NullsPerformance/disableSkins.json"
-  #   "@enabled": false
-  #   "@conflicts": []
+{
+    "@version": "0.0.1beta_v63",
+    "@title": "NullsPerformance",
+    "@description": {
+        "RU": "Мод-библиотека, позволяющая настроить вашу игру <b>так, как вам захочется.</b> <br>\nПодробнее: <a href=https://github.com/darkmean-dev/NullsPerformance>GitHub</a>\n",
+        "EN": "A mod library that lets you customize your game <b>exactly the way you want it.</b> <br>\nDetails: <a href=https://github.com/darkmean-dev/NullsPerformance>GitHub</a>\n",
+        "ZH": "一个 Mod 库，允许您<b>随心所欲地定制</b>您的游戏。<br>\n详情: <a href=https://github.com/darkmean-dev/NullsPerformance>GitHub</a>\n",
+        "TR": "Oyununuzu <b>tamamen istediğiniz gibi</b> özelleştirmenize olanak tanıyan bir mod kütüphanesi.<br>\nDetaylar: <a href=https://github.com/darkmean-dev/NullsPerformance>GitHub</a>\n"
+    },
+    "@author": "<a href='https://t.me/s_darkmean>darkmean</a> | <a href='https://github.com/darkmean-dev/NullsPerformance'>GitHub</a>",
+    "@features": {
+        "enableLowMode": {
+            "@name": {
+                "RU": "Принудительно включить режим экономии памяти",
+                "EN": "Force enable memory saving mode",
+                "ZH": "强制开启省内存模式",
+                "TR": "Bellek tasarrufu modunu zorla etkinleştir"
+            },
+            "@patches": "json/NullsPerformance/enableLowMode.json",
+            "@enabled": false,
+            "@conflicts": [
+                "enableHighMode"
+            ]
+        },
+        "enableHighMode": {
+            "@name": {
+                "RU": "Принудительно включить режим производительности",
+                "EN": "Force enable performance mode",
+                "ZH": "强制开启高性能模式",
+                "TR": "Performans modunu zorla etkinleştir"
+            },
+            "@patches": "json/NullsPerformance/enableHighMode.json",
+            "@enabled": false,
+            "@conflicts": [
+                "enableLowMode"
+            ]
+        },
+        "hardDisableMusic": {
+            "@name": {
+                "RU": "Принудительно отключить музыку в игре",
+                "EN": "Force Disable In-Game Music",
+                "ZH": "强制禁用游戏音乐",
+                "TR": "Oyun İçi Müziği Zorla Devre Dışı Bırak"
+            },
+            "@description": {
+                "RU": "Заменяет музыку пустым файлом. Может сэкономить немного памяти.",
+                "EN": "Replaces music with an empty file. May save a small amount of memory.",
+                "ZH": "用空文件替换游戏音乐。可以节省少量内存。",
+                "TR": "Müziği boş bir dosya ile değiştirir. Bir miktar bellek (RAM) tasarrufu sağlayabilir."
+            },
+            "@patches": "json/NullsPerformance/hardDisableMusic.json",
+            "@enabled": false,
+            "@conflicts": []
+        }
+    }
+}
