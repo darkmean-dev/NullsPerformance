@@ -1,0 +1,15 @@
+{
+    "client_globals": {
+        "LOW_MEMORY_LIMIT": {
+            "NumberValue": 9999999
+        },
+
+        "LOW_GFX_RENDERERS": {
+            "StringArray": ["*"]
+        },
+
+        "LOW_GFX_DEVICES": {
+            "StringArray": ["*"]
+        }
+    }
+}

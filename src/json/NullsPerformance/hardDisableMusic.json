@@ -1,0 +1,7 @@
+{
+    "music": {
+        "*": { 
+            "FileName": "sfx/empty.ogg"
+        }
+    }
+}
